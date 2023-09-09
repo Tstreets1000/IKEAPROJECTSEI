@@ -18,6 +18,7 @@ import Footer from '../../components/Footer/Footer';
 import UserPortal from '../../components/UserPortal/UserPortal';
 import NavBar from '../../components/NavBar/NavBar';
 import AuthPage from '../../pages/AuthPage/AuthPage';
+import Logo from "../Logo/Logo";
 
 export default function App() {
 	const [pexelsData, setPexelsData] = useState([]);
@@ -59,6 +60,7 @@ export default function App() {
 
 	return (
 		<main>
+			<Logo />
 			<NavBar />
 			<UserPortal user={user} setUser={setUser} cart={cart} />
 			<Routes>
