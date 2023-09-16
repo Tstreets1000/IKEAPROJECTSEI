@@ -6,7 +6,7 @@ const { getPexelsData } = require('./pexel-server');
 const cors = require('cors');
 
 const corsOptions = {
-	origin: 'http://localhost:3000'
+	origin: 'http://tjhikeaproject.me/pexels'// NEED TO MATCH URL NAME IN DIGITAL OCEAN
   };
   
   /* Middleware */

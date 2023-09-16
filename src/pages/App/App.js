@@ -18,7 +18,7 @@ import AuthPage from '../../pages/AuthPage/AuthPage';
 import Favorites from '../../pages/Favorites/Favorites';
 import Checkout from '../../pages/Checkout/Checkout';
 import AboutUs from '../../pages/AboutUs/AboutUs';
-import Profile from '../../pages/Profile/profile';
+import Profile from '../../pages/Profile/Profile';
 import Jobs from '../../pages/Jobs/Jobs';
 import OrderHistory from '../../pages/OrderHistoryPage/OrderHistoryPage';
 

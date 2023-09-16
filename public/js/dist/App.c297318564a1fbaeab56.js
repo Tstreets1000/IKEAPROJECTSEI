@@ -860,7 +860,7 @@ function PexelsContent(_ref) {
     setPexelsData
   } = _ref;
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    fetch('http://localhost:3000/pexels') //MUST MATCH SERVER BLOCK IN INGINX //
+    fetch('http://tjhikeaproject.me/pexels') // MUST MATCH SERVER BLOCK IN INGINX //
     .then(response => {
       if (!response.ok) {
         throw new Error("HTTP error! Status: ".concat(response.status));
@@ -1199,10 +1199,9 @@ function UserPortal(_ref) {
   }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__.faShoppingCart
   }), cart ? "(".concat(cart.totalQty, ")") : '(0)'), /*#__PURE__*/React.createElement("button", {
-    className: _UserPortal_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].LOBtn,
-    element: /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Navigate, {
-      to: "/ikea"
-    }),
+    className: _UserPortal_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].LOBtn
+    // element={<Navigate to="/ikea" />}
+    ,
     onClick: handleLogOut
   }, "Log Out")) : /*#__PURE__*/React.createElement("div", {
     className: _UserPortal_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].UserPortal
@@ -1376,7 +1375,7 @@ function AboutUs() {
 /* harmony import */ var _pages_Favorites_Favorites__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../pages/Favorites/Favorites */ "./src/pages/Favorites/Favorites.js");
 /* harmony import */ var _pages_Checkout_Checkout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../pages/Checkout/Checkout */ "./src/pages/Checkout/Checkout.js");
 /* harmony import */ var _pages_AboutUs_AboutUs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../pages/AboutUs/AboutUs */ "./src/pages/AboutUs/AboutUs.js");
-/* harmony import */ var _pages_Profile_profile__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../pages/Profile/profile */ "./src/pages/Profile/profile.js");
+/* harmony import */ var _pages_Profile_Profile__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../pages/Profile/Profile */ "./src/pages/Profile/Profile.js");
 /* harmony import */ var _pages_Jobs_Jobs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../pages/Jobs/Jobs */ "./src/pages/Jobs/Jobs.js");
 /* harmony import */ var _pages_OrderHistoryPage_OrderHistoryPage__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../pages/OrderHistoryPage/OrderHistoryPage */ "./src/pages/OrderHistoryPage/OrderHistoryPage.js");
 /* harmony import */ var _stripe_react_stripe_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @stripe/react-stripe-js */ "./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js");
@@ -1572,7 +1571,7 @@ function App() {
     })
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_21__.Route, {
     path: "/profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Profile_profile__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Profile_Profile__WEBPACK_IMPORTED_MODULE_13__["default"], {
       user: user,
       setUser: setUser
     })
@@ -2004,9 +2003,9 @@ function OrderHistoryPage(_ref) {
 
 /***/ }),
 
-/***/ "./src/pages/Profile/profile.js":
+/***/ "./src/pages/Profile/Profile.js":
 /*!**************************************!*\
-  !*** ./src/pages/Profile/profile.js ***!
+  !*** ./src/pages/Profile/Profile.js ***!
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
