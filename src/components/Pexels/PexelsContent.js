@@ -4,6 +4,7 @@ import styles from './PexelsContent.module.scss';
 function PexelsContent({ pexelsData, setPexelsData }) {
 	useEffect(() => {
 		fetch('http://localhost:3000/pexels') //MUST MATCH SERVER BLOCK IN INGINX //
+		fetch('http://localhost:3000/pexels')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(`HTTP error! Status: ${response.status}`);
